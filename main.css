@@ -1,0 +1,158 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('assets/space.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+.profile-card {
+    background-color: hsla(0, 0%, 100%, .5);
+    border-radius: 4px;
+    width: 480px;
+    max-width: calc(100vw - 10px);
+    position: relative;
+}
+
+.head, .links {
+    text-align: center;
+}
+
+.profile-image {
+    margin-top: -75px;
+    position: relative;
+    display: inline-block;
+}
+
+.content, .head {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.head {
+    margin-bottom: 50px;
+}
+
+.name-headline {
+    margin-top: 7px;
+}
+
+#name, #profession {
+    margin-bottom: 4px;
+}
+
+#source {
+    font-size: 0.7em;
+    margin-bottom: 15px;
+}
+
+.content {
+    margin: -25px auto -15px auto;
+    padding: 5% 8%;
+    border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+.about {
+    padding-bottom: 8px;
+    text-align: justify;
+}
+
+.profile-pictures {
+    width: auto;
+    height: 150px;
+    border-radius: 25%;
+    padding: 1px;
+    background-color: #666;
+    filter: grayscale(50%);
+}
+
+.top-pictures {
+    width: auto;
+    height: 150px;
+    border-radius: 25%;
+    padding: 1px;
+    background-color: #666;
+    filter: grayscale(50%);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/* Contact links */
+
+ul {
+    list-style-type: none;
+    padding-top: 10px;
+}
+  
+li {
+    font-size: 1.5em;
+    display: inline;
+    padding-right: 8px;
+}
+
+/* Interactions */
+
+.profile-image:hover .top-pictures {
+    display: inline;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+/* DeathStar */
+
+.deathstar {
+    width: 100px;
+    max-width: calc(100vw - 10px);
+    position: absolute;
+    bottom: -150px;
+    right: 260px;
+  }
+
+.deathstar-pictures {
+    width: auto;
+    height: 75px;
+    border-radius: 35%;
+    filter: grayscale(10%);
+}
+
+.deathstar-pictures:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(5%);
+}
+
+/* Coruscant */
+
+.coruscant {
+    width: 100px;
+    max-width: calc(100vw - 10px);
+    position: absolute;
+    bottom: -150px;
+    right: 100px;
+}
+
+.coruscant-pictures {
+    width: auto;
+    height: 75px;
+    border-radius: 35%;
+    filter: grayscale(10%);
+}
+
+.coruscant-pictures:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(5%);
+}
